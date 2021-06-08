@@ -1,1 +1,109 @@
 /*Maak hier jouw CSS!*/
+
+
+    .container{
+        background-color: #f6e5cc;
+        font-size: 20px;
+        color: white;
+        column-gap: 16px;
+        row-gap: 16px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas:
+            "A"
+            "content"
+            "C "
+            "D"
+            "E"
+            " item-6 "
+            "F";
+
+    }
+
+
+
+#item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: A;
+    border: solid #a51a1a 2px;
+    padding: 15px;
+}
+
+#item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: content;
+    border: solid #a51a1a 2px;
+    padding: 15px;
+}
+
+#item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: C;
+    border: solid #a51a1a 2px;
+    padding: 15px;
+}
+
+#item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: D;
+    border: solid #a51a1a 2px;
+    padding: 15px;
+}
+
+#item-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: E;
+    border: solid #a51a1a 2px;
+    padding: 15px;
+}
+
+#item-6 {
+    display: flex;
+    margin-top: 50px;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+#item-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5454;
+    grid-area: F;
+    border: 2px solid #a51a1a;
+    padding: 15px;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        font-size: smaller;
+        background-color: #f6e5cc;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 90px 100px auto 50px;
+        grid-template-areas:
+            "A C C"
+            "content C C"
+            "content E D "
+            "content E . "
+            "F F F";
+    }
+}
+
